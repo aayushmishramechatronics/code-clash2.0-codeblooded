@@ -12,14 +12,14 @@ const nearbySuppliers = [
     name: "Material Express",
     distance: "7.8 km",
     rating: 4.9,
-    phone: "+1-555-0125",
+    phone: "+91-983220125",
     specialty: "Roofing & Insulation",
   },
   {
     name: "Pro Builder Supply",
     distance: "12.4 km",
     rating: 4.5,
-    phone: "+1-555-0126",
+    phone: "+91-89320126",
     specialty: "Hardware & Fixtures",
   },
 ]

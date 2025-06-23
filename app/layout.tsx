@@ -7,9 +7,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Smart Construction Dashboard",
-  description: "Resource Optimization System with Excel Export",
-    generator: 'v0.dev'
+  title: "Construct-In",
+  description: "Manage Your Construction Project Seamlessly"
 }
 
 export default function RootLayout({

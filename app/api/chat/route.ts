@@ -1,7 +1,6 @@
 import { type NextRequest, NextResponse } from "next/server"
 import { OpenAI } from "openai"
 
-// Use a dedicated environment variable for OpenAI API key
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 })
@@ -10,7 +9,6 @@ export async function POST(request: NextRequest) {
   try {
     const { messages } = await request.json()
 
-    // Check if OpenAI API key is configured
     if (!process.env.OPENAI_API_KEY) {
       return NextResponse.json(
         {

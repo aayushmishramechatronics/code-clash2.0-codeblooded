@@ -17,10 +17,10 @@ const suppliers = [
     name: "BuildMart Pro",
     distance: "2.3 km",
     rating: 4.8,
-    phone: "+1-555-0123",
+    phone: "+91-983450123",
     specialty: "Concrete & Steel",
-    address: "123 Construction Ave",
-    deliveryTime: "Same day",
+    address: "Andheri",
+    deliveryTime: "Same Day",
     lat: 40.7589,
     lng: -73.9851,
   },
@@ -29,10 +29,10 @@ const suppliers = [
     name: "Construction Plus",
     distance: "5.1 km",
     rating: 4.6,
-    phone: "+1-555-0124",
+    phone: "+91-9343550124",
     specialty: "Lumber & Tools",
-    address: "456 Builder St",
-    deliveryTime: "Next day",
+    address: "Ulhasnagar",
+    deliveryTime: "Next Day",
     lat: 40.7614,
     lng: -73.9776,
   },
@@ -41,10 +41,10 @@ const suppliers = [
     name: "Material Express",
     distance: "7.8 km",
     rating: 4.9,
-    phone: "+1-555-0125",
+    phone: "+91-845020125",
     specialty: "Roofing & Insulation",
-    address: "789 Supply Rd",
-    deliveryTime: "2-3 days",
+    address: "Sion",
+    deliveryTime: "2-3 Days",
     lat: 40.7505,
     lng: -73.9934,
   },
@@ -53,10 +53,10 @@ const suppliers = [
     name: "Pro Builder Supply",
     distance: "12.4 km",
     rating: 4.5,
-    phone: "+1-555-0126",
+    phone: "+91-893340126",
     specialty: "Hardware & Fixtures",
-    address: "321 Trade Blvd",
-    deliveryTime: "Same day",
+    address: "Badlapur",
+    deliveryTime: "Same Day",
     lat: 40.7282,
     lng: -73.9942,
   },
@@ -65,10 +65,10 @@ const suppliers = [
     name: "Steel & Stone Co",
     distance: "15.2 km",
     rating: 4.7,
-    phone: "+1-555-0127",
+    phone: "+91-899340127",
     specialty: "Steel & Masonry",
-    address: "654 Industrial Way",
-    deliveryTime: "Next day",
+    address: "Karjat",
+    deliveryTime: "Next Day",
     lat: 40.7831,
     lng: -73.9712,
   },
@@ -77,10 +77,10 @@ const suppliers = [
     name: "Quick Build Materials",
     distance: "18.9 km",
     rating: 4.4,
-    phone: "+1-555-0128",
+    phone: "+91-933210128",
     specialty: "General Construction",
-    address: "987 Commerce Dr",
-    deliveryTime: "2-3 days",
+    address: "Shahad",
+    deliveryTime: "2-3 Days",
     lat: 40.7061,
     lng: -74.0087,
   },
@@ -127,7 +127,7 @@ export default function SuppliersPage() {
   }, [latitude, longitude])
 
   return (
-    <LayoutWrapper title="Supplier Map" subtitle="Find and connect with local material suppliers">
+    <LayoutWrapper title="Supplier Map" subtitle="find and connect with local material suppliers">
       <div className="space-y-6">
         {/* Search and Filter */}
         <Card className="glass-card">
@@ -218,7 +218,7 @@ export default function SuppliersPage() {
                 <div className="w-full h-full flex items-center justify-center bg-gray-100 dark:bg-gray-800 rounded-xl">
                   <div className="text-center">
                     <div className="h-8 w-8 animate-spin rounded-full border-4 border-blue-600 border-t-transparent mx-auto mb-4" />
-                    <p className="text-gray-600 dark:text-gray-400">Loading map...</p>
+                    <p className="text-gray-600 dark:text-gray-400">Loading Map...</p>
                   </div>
                 </div>
               )}
@@ -231,10 +231,10 @@ export default function SuppliersPage() {
                 🔴 Suppliers
               </Badge>
               <Badge variant="outline" className="text-xs">
-                🟢 Same-day Delivery
+                🟢 Same-Day Delivery
               </Badge>
               <Badge variant="outline" className="text-xs">
-                🟡 Next-day Delivery
+                🟡 Next-Day Delivery
               </Badge>
             </div>
           </CardContent>
@@ -315,9 +315,9 @@ export default function SuppliersPage() {
             {filteredSuppliers.length === 0 && (
               <div className="text-center py-8">
                 <Truck className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">No suppliers found</h3>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">No Suppliers Found</h3>
                 <p className="text-gray-600 dark:text-gray-400">
-                  Try adjusting your search criteria or specialty filter
+                  try adjusting your search criteria or specialty filter
                 </p>
               </div>
             )}

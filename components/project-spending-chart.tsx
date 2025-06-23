@@ -25,7 +25,7 @@ export function ProjectSpendingChart() {
           <DollarSign className="h-5 w-5 text-blue-600 dark:text-blue-400" />
           Project Material Spending
         </CardTitle>
-        <p className="text-sm text-gray-600 dark:text-gray-400">Total: ${totalSpending.toLocaleString()}</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">Total: ₹{totalSpending.toLocaleString()}</p>
       </CardHeader>
       <CardContent>
         <ChartContainer
@@ -65,7 +65,7 @@ export function ProjectSpendingChart() {
                           </div>
                           <div className="flex flex-col">
                             <span className="text-[0.70rem] uppercase text-muted-foreground">Spending</span>
-                            <span className="font-bold">${data.value.toLocaleString()}</span>
+                            <span className="font-bold">₹{data.value.toLocaleString()}</span>
                           </div>
                         </div>
                       </div>

@@ -52,10 +52,10 @@ const supplierReviews = {
       rating: 5,
       comment: "Excellent quality concrete mix, always on time!",
       author: "John Construction Co.",
-      date: "2024-01-10",
+      date: "2025-06-10",
     },
-    { rating: 4, comment: "Good prices and reliable delivery service.", author: "ABC Builders", date: "2024-01-05" },
-    { rating: 5, comment: "Best steel rebar quality in the area.", author: "Metro Construction", date: "2023-12-28" },
+    { rating: 4, comment: "Good prices and reliable delivery service.", author: "ABC Builders", date: "2025-01-05" },
+    { rating: 5, comment: "Best steel rebar quality in the area.", author: "Metro Construction", date: "2025-12-28" },
   ],
   2: [
     {

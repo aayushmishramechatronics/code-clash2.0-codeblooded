@@ -5,7 +5,7 @@ import { InventoryTracker } from "@/components/inventory-tracker"
 
 export default function InventoryPage() {
   return (
-    <LayoutWrapper title="Inventory Management" subtitle="Track and manage your construction materials inventory">
+    <LayoutWrapper title="Inventory Management" subtitle="Track and Manage your Materials Inventory">
       <InventoryTracker />
     </LayoutWrapper>
   )

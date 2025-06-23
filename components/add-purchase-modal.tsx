@@ -88,7 +88,7 @@ export function AddPurchaseModal({ isOpen, onClose, onAdd }: AddPurchaseModalPro
       <DialogContent className="max-w-md">
         <DialogHeader>
           <DialogTitle>Add New Purchase</DialogTitle>
-          <DialogDescription>Add a new purchase record to your history</DialogDescription>
+          <DialogDescription>add a new purchase record to your history</DialogDescription>
         </DialogHeader>
 
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -120,7 +120,7 @@ export function AddPurchaseModal({ isOpen, onClose, onAdd }: AddPurchaseModalPro
               id="cost"
               value={formData.cost}
               onChange={(e) => handleInputChange("cost", e.target.value)}
-              placeholder="e.g., 2500 or $2500"
+              placeholder="e.g., 2500 or ₹2500"
               required
             />
           </div>
@@ -190,7 +190,7 @@ export function AddPurchaseModal({ isOpen, onClose, onAdd }: AddPurchaseModalPro
               <PopoverTrigger asChild>
                 <Button variant="outline" className="w-full justify-start text-left font-normal">
                   <CalendarIcon className="mr-2 h-4 w-4" />
-                  {selectedDate ? format(selectedDate, "PPP") : "Pick a date"}
+                  {selectedDate ? format(selectedDate, "PPP") : "Pick a Date"}
                 </Button>
               </PopoverTrigger>
               <PopoverContent className="w-auto p-0">

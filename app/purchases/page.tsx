@@ -18,9 +18,9 @@ const purchaseHistory = [
   {
     id: 1,
     material: "Concrete Mix",
-    quantity: "50 bags",
-    date: "2024-01-15",
-    cost: "$2,500",
+    quantity: "50 Bag",
+    date: "2025-06-22",
+    cost: "₹2,500",
     supplier: "BuildMart Pro",
     project: "Residential Complex A",
     status: "Delivered",
@@ -29,9 +29,9 @@ const purchaseHistory = [
   {
     id: 2,
     material: "Steel Rebar",
-    quantity: "200 units",
-    date: "2024-01-14",
-    cost: "$4,800",
+    quantity: "200 Unit",
+    date: "2025-06-21",
+    cost: "₹4,800",
     supplier: "Construction Plus",
     project: "Commercial Plaza B",
     status: "Delivered",
@@ -40,9 +40,9 @@ const purchaseHistory = [
   {
     id: 3,
     material: "Lumber 2x4",
-    quantity: "100 pieces",
-    date: "2024-01-12",
-    cost: "$1,200",
+    quantity: "100 Piece",
+    date: "2025-06-12",
+    cost: "₹1,200",
     supplier: "Material Express",
     project: "Industrial Warehouse C",
     status: "In Transit",
@@ -51,9 +51,9 @@ const purchaseHistory = [
   {
     id: 4,
     material: "Roofing Tiles",
-    quantity: "500 tiles",
-    date: "2024-01-10",
-    cost: "$3,200",
+    quantity: "500 Tile",
+    date: "2025-06-10",
+    cost: "₹3,200",
     supplier: "Pro Builder Supply",
     project: "Office Building D",
     status: "Delivered",
@@ -62,9 +62,9 @@ const purchaseHistory = [
   {
     id: 5,
     material: "Insulation",
-    quantity: "20 rolls",
-    date: "2024-01-08",
-    cost: "$800",
+    quantity: "20 Roll",
+    date: "2025-06-08",
+    cost: "₹800",
     supplier: "BuildMart Pro",
     project: "Retail Center E",
     status: "Delivered",
@@ -74,8 +74,8 @@ const purchaseHistory = [
     id: 6,
     material: "PVC Pipes",
     quantity: "150 meters",
-    date: "2024-01-05",
-    cost: "$950",
+    date: "2025-06-04",
+    cost: "₹950",
     supplier: "Quick Build Materials",
     project: "Residential Complex A",
     status: "Delivered",
@@ -85,8 +85,8 @@ const purchaseHistory = [
     id: 7,
     material: "Cement Bags",
     quantity: "75 bags",
-    date: "2024-01-03",
-    cost: "$1,875",
+    date: "2025-06-03",
+    cost: "₹1,875",
     supplier: "Steel & Stone Co",
     project: "Commercial Plaza B",
     status: "Delivered",
@@ -96,8 +96,8 @@ const purchaseHistory = [
     id: 8,
     material: "Electrical Wire",
     quantity: "500 meters",
-    date: "2024-01-01",
-    cost: "$650",
+    date: "2025-06-01",
+    cost: "₹650",
     supplier: "Pro Builder Supply",
     project: "Office Building D",
     status: "Delivered",
@@ -105,7 +105,6 @@ const purchaseHistory = [
   },
 ]
 
-// Generate calendar data
 const generateCalendarData = () => {
   const calendarData: { [key: string]: any[] } = {}
 
@@ -180,7 +179,7 @@ export default function PurchasesPage() {
   }
 
   return (
-    <LayoutWrapper title="Purchase History" subtitle="Track and manage your material purchases">
+    <LayoutWrapper title="Purchase History" subtitle="Track and Manage your Material Purchases">
       <div className="space-y-6">
         {/* Search and Filters */}
         <Card className="glass-card">
@@ -190,7 +189,7 @@ export default function PurchasesPage() {
                 <div className="flex-1 relative">
                   <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
                   <Input
-                    placeholder="Search materials, suppliers, or projects..."
+                    placeholder="search materials, suppliers, or projects..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                     className="pl-10 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm"
@@ -415,8 +414,8 @@ export default function PurchasesPage() {
                 {filteredPurchases.length === 0 && (
                   <div className="text-center py-8">
                     <ShoppingCart className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">No purchases found</h3>
-                    <p className="text-gray-600 dark:text-gray-400">Try adjusting your search criteria or filters</p>
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">No Purchases Found</h3>
+                    <p className="text-gray-600 dark:text-gray-400">Try Adjusting your Search Criteria or Filters</p>
                   </div>
                 )}
               </div>
@@ -509,7 +508,7 @@ export default function PurchasesPage() {
                       ) : (
                         <div className="text-center py-4">
                           <ShoppingCart className="h-8 w-8 text-gray-400 mx-auto mb-2" />
-                          <p className="text-sm text-gray-600 dark:text-gray-400">No purchases on this date</p>
+                          <p className="text-sm text-gray-600 dark:text-gray-400">No Purchases on this Date</p>
                         </div>
                       )}
                     </div>
@@ -518,9 +517,9 @@ export default function PurchasesPage() {
                   {!selectedDate && (
                     <div className="text-center py-8">
                       <CalendarIcon className="h-8 w-8 text-gray-400 mx-auto mb-2" />
-                      <p className="text-sm text-gray-600 dark:text-gray-400">Click on a date to view purchases</p>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">Click on a Date to View Purchases</p>
                       <p className="text-xs text-gray-500 dark:text-gray-500 mt-1">
-                        Dates with purchases are highlighted
+                        Dates with Purchases are Highlighted
                       </p>
                     </div>
                   )}
@@ -550,17 +549,17 @@ export default function PurchasesPage() {
                 <div>
                   <p className="text-sm text-gray-600 dark:text-gray-400">Total Spent</p>
                   <p className="text-2xl font-bold text-gray-900 dark:text-gray-100">
-                    $
+                    ₹
                     {filteredPurchases
                       .reduce(
-                        (sum, purchase) => sum + Number.parseInt(purchase.cost.replace("$", "").replace(",", "")),
+                        (sum, purchase) => sum + Number.parseInt(purchase.cost.replace("₹", "").replace(",", "")),
                         0,
                       )
                       .toLocaleString()}
                   </p>
                 </div>
                 <div className="h-8 w-8 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
-                  <span className="text-green-600 dark:text-green-400 font-bold">$</span>
+                  <span className="text-green-600 dark:text-green-400 font-bold">₹</span>
                 </div>
               </div>
             </CardContent>
@@ -570,12 +569,12 @@ export default function PurchasesPage() {
             <CardContent className="p-4">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Avg Order Value</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Average Order Value</p>
                   <p className="text-2xl font-bold text-gray-900 dark:text-gray-100">
-                    $
+                    ₹
                     {Math.round(
                       filteredPurchases.reduce(
-                        (sum, purchase) => sum + Number.parseInt(purchase.cost.replace("$", "").replace(",", "")),
+                        (sum, purchase) => sum + Number.parseInt(purchase.cost.replace("₹", "").replace(",", "")),
                         0,
                       ) / filteredPurchases.length || 0,
                     ).toLocaleString()}

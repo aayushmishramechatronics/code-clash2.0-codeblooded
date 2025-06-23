@@ -40,7 +40,7 @@ export default function Dashboard() {
                 <TrendingUp className="h-3 w-3 mr-1" />
                 +12% from last month
               </div>
-              <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Across 5 active projects</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Across 5 Active Projects</p>
             </CardContent>
           </Card>
 
@@ -78,7 +78,7 @@ export default function Dashboard() {
                 <MapPin className="h-3 w-3 mr-1" />
                 {locationLoading ? "Locating..." : "Within 50km radius"}
               </div>
-              <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">4 with same-day delivery</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">4 with Same-Day Delivery</p>
             </CardContent>
           </Card>
         </div>
@@ -128,7 +128,7 @@ export default function Dashboard() {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-sm text-gray-600 dark:text-gray-400">Total Spent</p>
-                  <p className="text-2xl font-bold text-gray-900 dark:text-gray-100">$138K</p>
+                  <p className="text-2xl font-bold text-gray-900 dark:text-gray-100">₹1,38,000</p>
                 </div>
                 <div className="h-8 w-8 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
                   <TrendingUp className="h-4 w-4 text-green-600 dark:text-green-400" />
@@ -141,8 +141,8 @@ export default function Dashboard() {
             <CardContent className="p-4">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Avg Delivery</p>
-                  <p className="text-2xl font-bold text-gray-900 dark:text-gray-100">2.3d</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Average Delivery</p>
+                  <p className="text-2xl font-bold text-gray-900 dark:text-gray-100">2.3 D</p>
                 </div>
                 <div className="h-8 w-8 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center">
                   <Truck className="h-4 w-4 text-purple-600 dark:text-purple-400" />

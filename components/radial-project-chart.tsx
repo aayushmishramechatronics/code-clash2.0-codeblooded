@@ -112,7 +112,7 @@ export function RadialProjectChart() {
               </div>
               <div className="text-right">
                 <div className="text-sm font-bold text-gray-900 dark:text-gray-100">
-                  ${project.value.toLocaleString()}
+                  ₹{project.value.toLocaleString()}
                 </div>
                 <div className="text-xs text-gray-500 dark:text-gray-400">{project.percentage}%</div>
               </div>

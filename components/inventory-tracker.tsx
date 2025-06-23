@@ -31,7 +31,7 @@ const inventoryData: InventoryItem[] = [
     minStock: 20,
     maxStock: 100,
     unit: "bags",
-    lastRestocked: "2024-01-15",
+    lastRestocked: "2025-06-22",
     supplier: "BuildMart Pro",
     costPerUnit: 50,
     location: "Warehouse A",
@@ -44,7 +44,7 @@ const inventoryData: InventoryItem[] = [
     minStock: 25,
     maxStock: 200,
     unit: "units",
-    lastRestocked: "2024-01-10",
+    lastRestocked: "2025-06-21",
     supplier: "Construction Plus",
     costPerUnit: 24,
     location: "Warehouse B",
@@ -57,7 +57,7 @@ const inventoryData: InventoryItem[] = [
     minStock: 30,
     maxStock: 150,
     unit: "pieces",
-    lastRestocked: "2024-01-12",
+    lastRestocked: "2025-06-12",
     supplier: "Material Express",
     costPerUnit: 12,
     location: "Warehouse A",
@@ -70,7 +70,7 @@ const inventoryData: InventoryItem[] = [
     minStock: 50,
     maxStock: 500,
     unit: "tiles",
-    lastRestocked: "2024-01-08",
+    lastRestocked: "2025-06-08",
     supplier: "Pro Builder Supply",
     costPerUnit: 6.4,
     location: "Warehouse C",
@@ -83,7 +83,7 @@ const inventoryData: InventoryItem[] = [
     minStock: 15,
     maxStock: 100,
     unit: "meters",
-    lastRestocked: "2024-01-05",
+    lastRestocked: "2025-06-05",
     supplier: "Quick Build Materials",
     costPerUnit: 6.33,
     location: "Warehouse B",
@@ -173,7 +173,7 @@ export function InventoryTracker() {
                 <p className="text-2xl font-bold text-green-600 dark:text-green-400">${totalValue.toLocaleString()}</p>
               </div>
               <div className="h-8 w-8 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
-                <span className="text-green-600 dark:text-green-400 font-bold">$</span>
+                <span className="text-green-600 dark:text-green-400 font-bold">₹</span>
               </div>
             </div>
           </CardContent>
@@ -201,7 +201,7 @@ export function InventoryTracker() {
             <div className="flex-1 relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
               <Input
-                placeholder="Search inventory items..."
+                placeholder="search inventory items..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="pl-10 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm"
@@ -267,7 +267,7 @@ export function InventoryTracker() {
                   </div>
                   <div>
                     <span className="text-gray-600 dark:text-gray-400">Cost/Unit:</span>
-                    <p className="font-medium">${item.costPerUnit}</p>
+                    <p className="font-medium">₹{item.costPerUnit}</p>
                   </div>
                   <div>
                     <span className="text-gray-600 dark:text-gray-400">Supplier:</span>
@@ -317,7 +317,7 @@ export function InventoryTracker() {
                 {item.currentStock <= item.minStock && (
                   <div className="flex items-center gap-2 p-2 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-700">
                     <AlertTriangle className="h-4 w-4 text-red-600 dark:text-red-400" />
-                    <span className="text-sm text-red-800 dark:text-red-200">Stock below minimum level!</span>
+                    <span className="text-sm text-red-800 dark:text-red-200">Stock Below Minimum Level!</span>
                   </div>
                 )}
               </CardContent>
@@ -330,8 +330,8 @@ export function InventoryTracker() {
         <Card className="glass-card">
           <CardContent className="p-8 text-center">
             <Package className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">No items found</h3>
-            <p className="text-gray-600 dark:text-gray-400">Try adjusting your search criteria or category filter</p>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">No Items Found</h3>
+            <p className="text-gray-600 dark:text-gray-400">try adjusting your search criteria or category filter</p>
           </CardContent>
         </Card>
       )}

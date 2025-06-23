@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import { ClerkProvider } from "@clerk/nextjs"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 
@@ -16,11 +17,18 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  // Check if Clerk keys are available
+  const hasClerkKeys = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY && process.env.CLERK_SECRET_KEY
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          {children}
+        <ThemeProvider defaultTheme="light" storageKey="hackathon-tracker-theme">
+          {hasClerkKeys ? (
+            <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>{children}</ClerkProvider>
+          ) : (
+            children
+          )}
         </ThemeProvider>
       </body>
     </html>

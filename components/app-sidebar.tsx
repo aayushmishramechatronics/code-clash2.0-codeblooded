@@ -34,9 +34,9 @@ export function AppSidebar() {
           </div>
           <div className="flex flex-col">
             <span className="text-xs sm:text-sm font-semibold text-gray-900 dark:text-gray-100">
-              Smart Construction
+              Welcome to Construct-In!
             </span>
-            <span className="text-xs text-gray-500 dark:text-gray-400">Resource Optimization</span>
+            <span className="text-xs text-gray-500 dark:text-gray-400">User</span>
           </div>
         </div>
       </SidebarHeader>

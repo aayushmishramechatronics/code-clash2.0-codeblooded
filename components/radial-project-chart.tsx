@@ -48,7 +48,7 @@ export function RadialProjectChart() {
           <Building2 className="h-5 w-5 text-blue-600 dark:text-blue-400" />
           Project Spending Distribution
         </CardTitle>
-        <p className="text-sm text-gray-600 dark:text-gray-400">Total Budget: ${totalSpending.toLocaleString()}</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">Total Budget: ₹{totalSpending.toLocaleString()}</p>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig} className="h-[280px] sm:h-[320px] md:h-[350px]">
@@ -81,7 +81,7 @@ export function RadialProjectChart() {
                           <div className="flex justify-between gap-4">
                             <div className="flex flex-col">
                               <span className="text-[0.70rem] uppercase text-muted-foreground">Amount</span>
-                              <span className="font-bold">${data.value.toLocaleString()}</span>
+                              <span className="font-bold">₹{data.value.toLocaleString()}</span>
                             </div>
                             <div className="flex flex-col">
                               <span className="text-[0.70rem] uppercase text-muted-foreground">Percentage</span>

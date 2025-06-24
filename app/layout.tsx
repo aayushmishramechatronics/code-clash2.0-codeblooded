@@ -8,9 +8,8 @@ import { ClerkProvider } from "@clerk/nextjs"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Smart Construction Dashboard",
-  description: "Resource Optimization System with Excel Export",
-  generator: "v0.dev"
+  title: "Constructor-In",
+  description: "Resource Optimization System with Excel Export"
 }
 
 export default function RootLayout({

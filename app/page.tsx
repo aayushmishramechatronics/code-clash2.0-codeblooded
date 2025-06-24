@@ -1,4 +1,5 @@
 "use client"
+
 import { TrendingUp, AlertTriangle, Package, Cloud, Truck, MapPin } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { LayoutWrapper } from "@/components/layout-wrapper"
@@ -6,6 +7,7 @@ import { ProjectSpendingChart } from "@/components/project-spending-chart"
 import { useGeolocation } from "@/hooks/use-geolocation"
 import { useWeather } from "@/hooks/use-weather"
 import { RadialProjectChart } from "@/components/radial-project-chart"
+import { ProtectedRoute } from "@/components/protected-route"
 
 export default function Dashboard() {
   const { latitude, longitude, loading: locationLoading } = useGeolocation()
@@ -22,7 +24,7 @@ export default function Dashboard() {
 
   const risk = getRiskLevel()
 
-  return (
+  const content = (
     <LayoutWrapper title="Dashboard" subtitle="Smart Construction Resource Optimization">
       <div className="space-y-4 sm:space-y-6">
         {/* Summary Cards */}
@@ -154,4 +156,6 @@ export default function Dashboard() {
       </div>
     </LayoutWrapper>
   )
+
+  return <ProtectedRoute>{content}</ProtectedRoute>
 }
